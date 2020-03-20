@@ -1,0 +1,24 @@
+{
+  "name": "node-blog",
+  "version": "1.0.0",
+  "description": "a node blog application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "blog"
+  ],
+  "author": "wangjinwei",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "koa": "^2.11.0",
+    "koa-views": "^6.2.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
