@@ -1,0 +1,32 @@
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin-bottom: 60px;
+}
+
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+
+.title a {
+    color: #333;
+}
+
+.title a:hover {
+    color: #039be5;
+}
+
+.content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

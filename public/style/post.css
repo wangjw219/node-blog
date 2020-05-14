@@ -1,0 +1,21 @@
+.CodeMirror,
+.CodeMirror-scroll {
+    min-height: 500px;
+    max-height: 6000px;
+}
+
+.post-intro {
+    border: 1px solid #ccc;
+    outline: 0;
+    padding: 10px;
+    height: 100px;
+}
+
+.save-container {
+    text-align: center;
+}
+
+.save-button {
+    width: 200px;
+    margin: 0 auto;
+}

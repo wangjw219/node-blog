@@ -1,0 +1,18 @@
+.login {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.button-container {
+    position: relative;
+    text-align: center;
+}
+
+.login-button {
+    width: 200px;
+}
+
+.link {
+    text-align: center;
+}

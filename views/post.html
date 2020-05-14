@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="/style/simplemde.min.css">
+<link rel="stylesheet" type="text/css" href="/style/post.css">
+{% endblock %}
+
+{% block content %}
+    <div class="page post">
+        <input class="post-title" placeholder="请输入标题" id="post_title" />
+        <textarea class="post-intro" placeholder="文章简介" id="post_intro"></textarea>
+        <textarea id="post_area" class="post-content"></textarea>
+        <div class="col s12 save-container">
+            <button class="btn-large save-button" id="post_button">保存</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+<script  type="text/javascript" src="/script/simplemde.min.js"></script>
+<script  type="text/javascript" src="/script/post.js"></script>
+{% endblock %}

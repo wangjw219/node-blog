@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="/style/login.css">
+{% endblock %}
+
+{% block content %}
+    <section class="login">
+        <div class="row">
+            <form class="col s12"  id="login_form">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" class="validate" required>
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 button-container">
+                        <button type="submit" class="btn-large login-button" id="login_button">login</button>
+                    </div>
+                </div>
+                <div class="row link">
+                    <a href="/signup">signup >></a>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+<script  type="text/javascript" src="/script/login.js"></script>
+{% endblock %}

@@ -1,0 +1,18 @@
+.main {
+    padding-top: 0;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+
+.content {
+    font-size: 16px;
+}
+
+pre {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+}

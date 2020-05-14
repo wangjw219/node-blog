@@ -1,0 +1,29 @@
+.header {
+    line-height: 92px;
+    background-color: #f5f5f5;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header-main-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.header-main-title a {
+    color: #333;
+}
+
+.main {
+    overflow: hidden;
+    padding-top: 40px;
+    width: 800px;
+    margin: 0 auto;
+}

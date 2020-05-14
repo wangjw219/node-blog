@@ -4,7 +4,7 @@
   "description": "a node blog application",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
   "keywords": [
     "node",
@@ -14,11 +14,19 @@
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^8.0.8",
+    "bcrypt": "^4.0.1",
     "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-session": "^5.13.1",
+    "koa-static": "^5.0.0",
     "koa-views": "^6.2.1",
+    "markdown-it": "^10.0.0",
+    "mongoose": "^5.9.5",
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
+    "chalk": "^3.0.0",
+    "cross-env": "^7.0.2",
     "nodemon": "^2.0.2"
   }
 }

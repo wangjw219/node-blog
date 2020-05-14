@@ -1,9 +1,12 @@
-const homeService = require('../service/home');
+const config = require('../config/default');
+const post = require('../model/post');
 
 module.exports = async (ctx, next) => {
-    const list = await homeService.list();
+    const perpage = 10;
+    const page = ctx.query.page || 1;
+    const list = await post.getPostList({page, perpage});
     await ctx.render('home.html', {
-        title: '首页',
+        title: config.sitename,
         list
     });
 }

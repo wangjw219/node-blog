@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 
+{% block header %}
+<link rel="stylesheet" type="text/css" href="/style/home.css">
+{% endblock %}
+
 {% block content %}
-    <div class="index">
+    <div class="page index">
         <ul class="list">
             {% for item in list %}
                 <div class="item">
-                    <p class="title">{{ item.title }}</p>
-                    <p class="content">{{ item.content }}</p>
+                    <p class="title"><a href="/detail/{{ item._id }}">{{ item.title }}</a></p>
+                    <div class="content">{{ item.intro }}</div>
                 </div>
             {% endfor %}
         </ul>

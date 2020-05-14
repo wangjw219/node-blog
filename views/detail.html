@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="/style/detail.css">
+{% endblock %}
+
+{% block content %}
+    <div class="page detail">
+        <p class="title">{{ detail.title }}</p>
+        <div class="content">{{ detail.content|safe }}</div>
+    </div>
+{% endblock %}
